@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeArb - Meme Coin Price Comparison</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100">
+  <div class="container mx-auto p-6">
+    <h1 class="text-center text-3xl font-bold text-blue-600 mb-8">MemeArb - Meme Coin Price Comparison</h1>
+    
+    <table class="min-w-full bg-white shadow-lg rounded-lg">
+      <thead>
+        <tr>
+          <th class="py-3 px-4 text-left">Exchange</th>
+          <th class="py-3 px-4 text-left">Coin</th>
+          <th class="py-3 px-4 text-left">Price (USD)</th>
+          <th class="py-3 px-4 text-left">Change</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% memeCoins.forEach(coin => { %>
+          <tr>
+            <td class="py-3 px-4 border-b"><%= coin.exchange %></td>
+            <td class="py-3 px-4 border-b"><%= coin.coin %></td>
+            <td class="py-3 px-4 border-b"><%= coin.price %></td>
+            <td class="py-3 px-4 border-b"><%= coin.change %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

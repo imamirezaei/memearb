@@ -1,0 +1,16 @@
+{
+  "name": "memearb",
+  "version": "1.0.0",
+  "description": "Meme Coin Arbitrage Trading",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ejs": "^3.1.6"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
